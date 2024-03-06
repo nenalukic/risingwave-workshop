@@ -35,10 +35,10 @@ clean-cluster() {
 # You can run files like:
 # clickhouse-client < file.sql
 clickhouse-client() {
-  docker exec -i clickhouse clickhouse-client
+    docker exec -i clickhouse clickhouse-client
 }
 
 # Starts an interactive clickhouse session.
 clickhouse-client-term() {
-  docker exec -it clickhouse clickhouse-client
+    docker exec -it clickhouse clickhouse-client
 }
