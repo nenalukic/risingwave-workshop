@@ -364,6 +364,24 @@ CREATE MATERIALIZED VIEW longest_trip_1_min AS SELECT
 
 Didn't include the query plan this time, you may look at the dashboard.
 
+After this, you may run the visualization dashboard to see the data in real-time.
+
+Start the backend which queries RisingWave:
+```bash
+./server.py
+```
+
+### Visualize Data from Materialized View 3 and 4
+
+Start the frontend, in a separate terminal, if you're on OSX:
+```bash
+open index.html
+```
+
+Start the frontend, in a separate terminal, if you're on linux:
+```bash
+xdg-open index.html
+```
 ### Materialized View 5: Average Fare Amount vs Number of rides
 
 How does `avg_fare_amt` change relative to number of pickups per minute?
